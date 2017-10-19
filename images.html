@@ -4,71 +4,61 @@
 <title>Tesla Model 3 Gallery</title>
 </head>
 <body>
-<div class="container">
-        <div class="row">
-        <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <h1 class="gallery-title">Gallery</h1>
-        </div>
+        
+        <div id="nav">
+    <ul>
+        <li>
+          <a href="https://stjrush.github.io/DBoyz/Model3.html">Home</a>
+        </li>
+        <li><a href="https://toddmilne13.github.io/images.html/images.html">Images</a>
+        </li>
+        <li><a href="htps://github.com/Danielturcan/Updates/updates.html">Updates</a>
+        </li>
+        <li><a href="https://joshboybiryney.github.io/info/about.html">Info</a>
+    </ul>
+    
+  </div>
 
-        <div align="center">
-            <button class="btn btn-default filter-button" data-filter="all">All</button>
-            <button class="btn btn-default filter-button" data-filter="hdpe">Car Interior</button>
-            <button class="btn btn-default filter-button" data-filter="sprinkle">Car Seats</button>
-            <button class="btn btn-default filter-button" data-filter="spray">Car Enhine</button>
-            <button class="btn btn-default filter-button" data-filter="irrigation">Car Wheels</button>
-        </div>
-        <br/>
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
-                <img src="https://i.ytimg.com/vi/NQvmxFiU_jU/maxresdefault.jpg" width="365" height="365" class="img-responsive">
-            </div>
+        
 
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
-                <img src="" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
-                <img src="" class="img-responsive">
-            </div>
-            
-             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
-                <img src="" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
-                <img src="http://insideevs.com/wp-content/uploads/2014/10/Tesla-seats-3.jpg" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
-                <img src="https://i1.wp.com/electrek.files.wordpress.com/2016/04/tesla-model-3-5-of-12.jpg?w=681&h=454&crop&quality=82&strip=all&ssl=1" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
-                <img src="https://s-media-cache-ak0.pinimg.com/originals/5c/a3/23/5ca323cd2f820b2cfcb9d2cd01e5eff8.jpg" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
-                            <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-            </div>
-        </div>
-    </div>
-</section>
 <style>
+        
+         #nav {
+    right: 10px;
+    height: 70px;
+    background-color: rgb(242, 242, 242);
+    opacity: 0.6;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+  
+    
+}
+#nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+#nav ul li {
+    margin: 0;
+    padding: 0;
+    float:left;
+    height: 100px;
+}
+#nav ul li a {
+    text-decoration: none;
+    padding: 10px 25px;
+    display: block;
+    color: #FFF;
+    text-align: center;
+    font-family: monospace;
+    color: black;
+}
+#nav ul li a:hover {
+    color: black;
+}
+        
 .gallery-title
 {
     font-size: 36px;
@@ -85,69 +75,10 @@
     height: 45px;
     border-bottom: 1px solid black;
 }
-.filter-button
-{
-    font-size: 18px;
-    border: 1px solid black;
-    border-radius: 5px;
-    text-align: center;
-    color: red;
-    margin-bottom: 30px;
 
-}
-.filter-button:hover
-{
-    font-size: 18px;
-    border: 1px solid #42B32F;
-    border-radius: 5px;
-    text-align: center;
-    color: #ffffff;
-    background-color: black;
-
-}
-.btn-default:active .filter-button:active
-{
-    background-color: black;
-    color: white;
-}
-
-.port-image
-{
-    width: 100%;
-}
-
-.gallery_product
-{
-    margin-bottom: 30px;
-}
 </style>
 
-$(document).ready(function(){
-
-    $(".filter-button").click(function(){
-        var value = $(this).attr('data-filter');
-        
-        if(value == "all")
-        {
-            //$('.filter').removeClass('hidden');
-            $('.filter').show('1000');
-        }
-        else
-        {
-//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
-//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
-            $(".filter").not('.'+value).hide('3000');
-            $('.filter').filter('.'+value).show('3000');
-            
-        }
-    });
-    
-    if ($(".filter-button").removeClass("active")) {
-$(this).removeClass("active");
-}
-$(this).addClass("active");
-
-});
-
+</body>
+</html>
 
            
