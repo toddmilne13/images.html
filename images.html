@@ -18,28 +18,69 @@
     </ul>
     
   </div>
-<div>
-        <ul>
-  <li><a class="active" href="#home">Home</a></li>
-  <li><a href="ws">interior</a></li>
-  <li><a href="#contact">exterior</a></li>
-  <li><a href="#about">wheels</a></li>
-  <li><a href="#about">engine</a></li>  
-</ul>
-        </div>
-<div>
-
-
+        
+        <div class="gallery">
+  <a target="_blank" href="img_fjords.jpg">
+    <img src="http://www.xautoworld.com/wp-content/uploads/2017/06/model-3-wind-turbine-wheel.jpg" alt="Trolltunga Norway" width="300" height="200">
+  </a>
+  <div class="desc">Threre are many different types of wheel options, this is one of many amazing types</div>
 </div>
+
+<div class="gallery">
+  <a target="_blank" href="img_forest.jpg">
+    <img src="https://www.google.ie/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjZ0of5jf_WAhUDK8AKHbH3AOUQjRwIBw&url=https%3A%2F%2Fwww.extremetech.com%2Fextreme%2F225853-tesla-unveils-its-long-awaited-35k-model-3-electric-car&psig=AOvVaw1cNyz1QHw2u1e731-dFVbk&ust=1508585713669126" alt="Forest" width="600" height="400">
+  </a>
+  <div class="desc">This is the amazing interior of the Tesla 3, it has a smoooth strip of wood going across the dashboars to give a modern finish</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_lights.jpg">
+    <img src="http://insideevs.com/wp-content/uploads/2014/10/Tesla-seats-3.jpg" alt="Northern Lights" width="600" height="400">
+  </a>
+  <div class="desc">These are some of the leather seats that are very comfy to sit on</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="http://images.dailytech.com/nimage/2013-Tesla-Model-S-front-3-1352910063631.jpg" alt="Mountains" width="600" height="400">
+  </a>
+  <div class="desc">This is a front view of the slick Tesla Model 3</div>
+</div>
+
         
 
 <style>
         
+   body {
+         background-color: #F2CEE6;  
+        }
+        
+        
+        div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+        
          #nav {
     right: 10px;
     height: 70px;
-    background-color: rgb(242, 242, 242);
-    opacity: 0.6;
+    background-color: black;
     width: 100%;
     text-align: center;
     font-size: 25px;
@@ -65,56 +106,13 @@
     color: #FFF;
     text-align: center;
     font-family: monospace;
-    color: black;
+    color: white;
 }
 #nav ul li a:hover {
     color: black;
 }
         
-.gallery-title
-{
-    font-size: 36px;
-    color: black;
-    text-align: center;
-    font-weight: 500;
-    margin-bottom: 70px;
-}
-.gallery-title:after {
-    content: "";
-    position: absolute;
-    width: 7.5%;
-    left: 46.5%;
-    height: 45px;
-    border-bottom: 1px solid black;
-}
 
-        ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 25%;
-    background-color: #f1f1f1;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
-}
-
-li a {
-    display: block;
-    color: #000;
-    padding: 8px 16px;
-    text-decoration: none;
-}
-
-li a.active {
-    background-color: #4CAF50;
-    color: white;
-}
-
-li a:hover:not(.active) {
-    background-color: #555;
-    color: white;
-}
 </style>
 
 </body>
