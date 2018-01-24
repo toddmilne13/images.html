@@ -20,33 +20,44 @@
     
   </div>
         
-        <div class="gallery">
-  <a target="_blank" href="img_fjords.jpg">
-    <img src="http://www.xautoworld.com/wp-content/uploads/2017/06/model-3-wind-turbine-wheel.jpg" alt="Trolltunga Norway" width="600" height="400">
-  </a>
-  <div class="desc">Threre are many different types of wheel options, this is one of many amazing types</div>
+       <div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_fjords.jpg">
+      <img src="http://st.motortrend.com/uploads/sites/5/2015/03/2013-Tesla-Model-S-front-end-view.jpg?interpolation=lanczos-none&fit=around|300:200" alt="Front View of Tesla" width="300" height="200">
+    </a>
+    <div class="desc">The front view of the Tesla Model 3, with its curved bonnet</div>
+  </div>
 </div>
 
-<div class="gallery">
-  <a target="_blank" href="img_forest.jpg">
-    <img src="https://electrek.files.wordpress.com/2017/07/model-3-interior-dash-desert-view1.png?w=1000&h=667" alt="Forest" width="600" height="400">
-  </a>
-  <div class="desc">This is the amazing interior of the Tesla 3, it has a smoooth strip of wood going across the dashboars to give a modern finish</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_forest.jpg">
+      <img src="https://cdn2.benzinga.com/files/imagecache/600x400xUP/images/story/2012/model_3_interior.jpg" alt="tesla Interior" width="600" height="400">
+    </a>
+    <div class="desc">This is the interior of the brand new Tesla Model 3, It has a strip of wood going across the dashboard to make it look even bette</div>
+  </div>
 </div>
 
-<div class="gallery">
-  <a target="_blank" href="img_lights.jpg">
-    <img src="http://insideevs.com/wp-content/uploads/2014/10/Tesla-seats-3.jpg" alt="Northern Lights" width="600" height="400">
-  </a>
-  <div class="desc">These are some of the leather seats that are very comfy to sit on</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_lights.jpg">
+      <img src="https://cdn.shopify.com/s/files/1/0196/5170/files/Tesla-Model-3-frunk_grande.jpg?v=1501875842" alt="" width="600" height="400">
+    </a>
+    <div class="desc">You thought there was an engine? Well they put it under the car to store more of your goods!</div>
+  </div>
 </div>
 
-<div class="gallery">
-  <a target="_blank" href="img_mountains.jpg">
-    <img src="http://images.dailytech.com/nimage/2013-Tesla-Model-S-front-3-1352910063631.jpg" alt="Mountains" width="600" height="400">
-  </a>
-  <div class="desc">This is a front view of the slick Tesla Model 3</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="">
+      <img src="https://cdn.shopify.com/s/files/1/1724/5219/articles/Tesla-Model-3-side-profile-carbon-fiber-sport-kit-wm-5_600x.jpg?v=1501871427" alt="" width="600" height="400">
+    </a>
+    <div class="desc">yyyy</div>
+  </div>
 </div>
+
+<div class="clearfix"></div>
 
         
 
@@ -57,12 +68,8 @@
         }
         
         
-        div.gallery {
-    margin: 75px;
-    border: 2px solid #ccc;
-    float: left;
-    width: 180px;
-    height: 150px;
+div.gallery {
+    border: 1px solid #ccc;
 }
 
 div.gallery:hover {
@@ -77,6 +84,35 @@ div.gallery img {
 div.desc {
     padding: 15px;
     text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
 }
         
      #nav {
